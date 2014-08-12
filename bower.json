@@ -47,7 +47,7 @@
 
     "install" : {
 
-        "httpdocs/assets/sass/module/_grid.scss" : "httpdocs/assets/sass/module"
+        "httpdocs/assets/sass/module/_grid.scss" : "httpdocs/assets/sass/modules"
 
     }
 
