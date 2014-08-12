@@ -68,14 +68,7 @@ $max: max-width;
 //     display:block;
 // }
 
-@mixin inline-block($align: bottom) {
-	display:-moz-inline-stack;
-	display: inline-block;
-	vertical-align: $align;
-	zoom: 1;
-	*display: inline;
-	*vertical-align: auto;
-}
+
 @mixin clearfix {
 	&:before,
 	&:after {
