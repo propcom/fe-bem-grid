@@ -1,0 +1,40 @@
+# Ignore sass-cache files.
+*.sass-cache*
+.sass-cache
+**/.sass-cache
+**/.sass-cache/*
+**.sass-cache**
+.sass-cache/*
+
+
+# data dirs
+/public/data
+/fuel/app/data
+/data
+
+# Standard FuelPHP ignores
+/fuel/app/logs/*
+/fuel/app/cache/*
+/fuel/app/tmp/*
+
+# config files
+/fuel/app/config/migrations.php
+/fuel/app/config/crypt.php
+/fuel/app/config/*/crypt.php
+
+# custom environments
+/.fuelenv
+/fuel/app/config/*/*
+!/fuel/app/config/development/*
+!/fuel/app/config/test/*
+!/fuel/app/config/staging/*
+!/fuel/app/config/production/*
+
+# composer
+/fuel/vendor
+
+# ant generated assets
+.sass-cache
+/httpdocs/assets/.sass-cache
+/httpdocs/assets/css/main.css
+/httpdocs/assets/css/main.css.map

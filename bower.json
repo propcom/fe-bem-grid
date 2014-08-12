@@ -1,0 +1,54 @@
+{
+
+    "name": "fe-bem-grid",
+    "version": "0.0.1",
+    "authors": [
+
+        "Simon Shahriveri"
+
+    ],
+
+    "description": "BEM Grid System",
+    "main": "httpdocs/assets/sass/module/_grid.scss",
+    "repository": {
+
+        "type" : "git",
+        "url" : "https://github.com/propcom/fe-bem-grid.git"
+
+    },
+
+    "keywords": [
+
+        "BEM",
+        "grid",
+        "columns",
+        "responsive",
+        "rwd",
+        "SASS",
+        "Propeller",
+        "propcomm",
+        "propeller",
+        "propcom"
+
+    ],
+
+    "license": "Public",
+    "homepage": "https://github.com/propcom/fe-bem-grid",
+
+    "ignore" : [
+
+        "httpdocs/assets/css/",
+        "httpdocs/assets/sass/base",
+        "httpdocs/assets/sass/layout",
+        "httpdocs/assets/sass/main.scss",
+        "httpdocs/index.php"
+
+    ],
+
+    "install" : {
+
+        "httpdocs/assets/sass/module/_grid.scss" : "httpdocs/assets/sass/module"
+
+    }
+
+}

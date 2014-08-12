@@ -1,0 +1,35 @@
+/* =============================================================================
+   Primary styles
+   Author: Simon Shahriveri
+   ========================================================================== */
+
+
+/*============================
+*	Base
+	all base files to reset and get the site started
+*/
+
+	@import "base/variables";
+	@import "base/mixins";
+	@import "base/base";
+	@import "base/typography";
+
+
+/*============================
+*	Layout
+	Main layout elements of site - Header, sidebar footer etc but none of the reusable
+	elements that are inside of these including headers, links etc. Make these in a
+	more modular method.
+*/
+
+	@import "layout/layout";
+
+
+
+/*============================
+*	Modules
+	this will be the core styles for the site. this should be as modular as possible
+	but no state styles. These are for the next section.
+*/
+
+	  @import "module/grid";

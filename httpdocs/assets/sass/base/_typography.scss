@@ -1,0 +1,138 @@
+// px to rem for font-sizes and line-height
+@mixin font-size($sizeValue: 1.6, $line: $sizeValue * 1.25){
+	font-size: ($sizeValue * 1) + px;
+	line-height: ($line * 1) + px;
+	font-size: ($sizeValue / 10) + rem;
+	line-height: ($line / 10) + rem;
+}
+// usage: @include font-size(13);
+/*-----------------------------------------------------------------------------
+--------------------------------1--------TYPOGRAPHY----------------------------
+-------------------------------------------------------------------------------*/
+
+html {
+  font-size:62.5%;
+  line-height: 62.5%;
+}
+
+
+body{
+  font-family:$primaryFont;
+  @include font-size($base-font-size);
+  color:$primaryColor;
+  font-weight:normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Paragraph sizes */
+
+p {
+	margin: 0 0 10px;
+	padding: 10px 0 0;
+	color: $primaryColor;
+	@include font-size($p-size);
+	font-weight: bold;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+a, a:active {color:$primaryColor; text-decoration:none;}
+a:hover {color:$primaryColor; text-decoration:underline;}
+
+strong,b {font-weight: bold;}
+
+small,
+.small {
+	@include font-size($micro-size);
+	display: inline-block;
+}
+
+
+/*-----------------------------------------------------------------------------
+--------------------------------2--------HEADINGS------------------------------
+-------------------------------------------------------------------------------*/
+
+%headings {
+ 	margin:0 0 10px 0;
+ 	color:$primaryColor;
+ 	font-family:$primaryFont;
+ 	font-weight:normal;
+}
+
+// Standard Headings
+h1,
+.h_alpha {
+	@extend %headings;
+	@include font-size($alpha-size);
+}
+
+h2,
+.h_beta {
+	@extend %headings;
+	@include font-size($beta-size);
+}
+h3,
+.h_gamma{
+	@extend %headings;
+	@include font-size($gamma-size);
+}
+
+h4,
+.h_delta{
+	@extend %headings;
+	@include font-size($delta-size);
+}
+
+h5,
+.h_epsilon{
+	@extend %headings;
+	@include font-size($epsilon-size);
+}
+
+h6,
+.h_zeta{
+	@extend %headings;
+	@include font-size($zeta-size);
+}
+
+
+// Mega Headlines
+.h_giga{
+	@include font-size($giga-size);
+}
+.h_mega{
+	@include font-size($mega-size);
+}
+.h_kilo{
+	@include font-size($kilo-size);
+}
+.h_hecto {
+	@include font-size($hecto-size);
+}
+
+
+// Micro Headlines
+
+.h_milli{
+	@include font-size($milli-size);
+}
+.h_micro{
+	@include font-size($micro-size);
+}
+
+
+
+// Generic Font size classes
+
+.font--xxs { @include font-size($base-font-size - 6); }
+.font--xs  { @include font-size($base-font-size - 4); }
+.font--s   { @include font-size($base-font-size - 2); }
+.font--m   { @include font-size($base-font-size); }
+.font--l   { @include font-size($base-font-size + 5); }
+.font--xl  { @include font-size($base-font-size + 10); }
+.font--xxl { @include font-size($base-font-size + 15); }
+
+.type--upper {text-transform: uppercase;}
+.type--lower {text-transform: lowercase;}
+
