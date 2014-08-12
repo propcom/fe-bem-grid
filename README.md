@@ -6,3 +6,4 @@ A SASS Grid System that is built using the BEM Methodology for flexibility and e
 For a demo, check out http://fe-bem-grid.simons.local/
 
 A more detailed documentation is coming soon.
+
